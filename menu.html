@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小時光麵館</title>
+    <script src="https://kit.fontawesome.com/36793e6c29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-second-color fixed-top">
+            <div class="container">
+                <button class="navbar-toggler d-md-none d-flex align-items-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- LOGO -->
+                <a class="navbar-brand mr-0 text-center text-md-left" href="index.html">
+                    <img src="img/logo.png" width="220" height="40" class="d-none d-md-inline-block" alt="">
+                    <img src="img/logo.png" width="180" height="40" class="d-inline-block d-md-none" alt="">
+                </a>
+                <!-- 購物車 -->
+                <a href="cart.html" class="btn btn-sm btn-cart order-md-1">
+                    <i class="fas fa-shopping-cart text-main-color" style="font-size: 1.5rem;"></i><span class="badge badge-danger">2</span>
+                </a>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  font-weight-bolder ml-auto mr-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-md-left" href="index.html" id="index">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-md-left active" href="menu.html" id="menu">餐點</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center text-md-left" href="#" data-toggle="modal" data-target="#loginModal" id="login">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container py-0 px-0">
+            <!-- banner -->
+            <div class="jumbotron jumbotron-fluid banner-img mb-5 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1544899812-000334603501?ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80);">
+            </div>
+        </div>
+    </header>
+    <!-- menu-list -->
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-3 px-0 mb-3">
+                <div class="sticky-top" style="top: 70px;">
+                    <h4 class="text-center bg-main-color text-white mb-0 py-2">餐點類別</h4>
+                    <div class="list-group text-center " style="font-size: 1.25rem;">
+                        <a href="#pane-1-page-1" class="menu-nav list-group-item list-group-item-action active" data-toggle="list">所有品項 (48)</a>
+                        <a href="#pane-2" class="menu-nav list-group-item list-group-item-action" data-toggle="list">本日精選 (10)</a>
+                        <a href="#pane-3" class="menu-nav list-group-item list-group-item-action" data-toggle="list">人氣推薦 (26)</a>
+                        <a href="#pane-4" class="menu-nav list-group-item list-group-item-action" data-toggle="list">新品上市 (12)</a>
+                        <a href="#" class="menu-nav list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">絕版美食</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- 所有品項-第一頁 -->
+                    <div class="tab-pane fade show active" id="pane-1-page-1">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/intro_bg_1.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">匙來的自己</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_1.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">心碎的滋味</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $230</div>
+                                    </div>
+                                    <div class="card-footer p-0 ">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_3.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">栗子蛋糕</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $120</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_2.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">三刀流肉燥麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color " style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/intro_bg_2.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">牛在身邊鍋燒麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $230</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_4.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">英雄不流淚</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $200</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <nav class="d-flex justify-content-center mt-4">
+                            <ul class="pagination pagination-lg">
+                                <li class="page-item disabled">
+                                    <a class="page-link btn-page" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link btn-page" href="#pane-1-page-1" data-toggle="tab">1</a></li>
+                                <li class="page-item"><a class="page-link btn-page" href="#pane-1-page-2" data-toggle="tab">2</a></li>
+                                <li class="page-item">
+                                    <a class="page-link btn-page" href="#pane-1-page-2" data-toggle="tab" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- 所有品項-第二頁 -->
+                    <div class="tab-pane fade" id="pane-1-page-2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_5.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">原味二分之一</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $150</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_6.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">時光慢慢炒</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0 ">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_7.jpg" class="card-img-top img-fluid" style="max-height: 222px;" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">灰熊失禮</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $150</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_8.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">一口長拌麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_9.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">生日快熱炒麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $120</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_10.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">黃金遊樂園</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $200</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <nav class="d-flex justify-content-center mt-4">
+                            <ul class="pagination pagination-lg">
+                                <li class="page-item">
+                                    <a class="page-link btn-page" href="#pane-1-page-1" data-toggle="tab" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link  btn-page" href="#pane-1-page-1" data-toggle="tab">1</a></li>
+                                <li class="page-item active"><a class="page-link btn-page" href="#pane-1-page-2" data-toggle="tab">2</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link  btn-page" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- 本日精選 -->
+                    <div class="tab-pane fade" id="pane-2">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/intro_bg_1.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">匙來的自己</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_1.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">心碎的滋味</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $230</div>
+                                    </div>
+                                    <div class="card-footer p-0 ">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_3.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">栗子蛋糕</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $120</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">本日精選</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_2.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">三刀流肉燥麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color " style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 人氣推薦 -->
+                    <div class="tab-pane fade" id="pane-3">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/intro_bg_2.png" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">牛在身邊鍋燒麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $230</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_4.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">英雄不流淚</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $200</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_5.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">原味二分之一</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $150</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">人氣推薦</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_6.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">時光慢慢炒</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0 ">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 新品上市 -->
+                    <div class="tab-pane fade" id="pane-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_7.jpg" class="card-img-top img-fluid" style="max-height: 222px;" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">灰熊失禮</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $150</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_8.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">一口長拌麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $180</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_9.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">生日快熱炒麵</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $120</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100 box-shadow">
+                                    <div class="card-header p-0 ">
+                                        <div class="item-tag text-white p-2">新品上市</div>
+                                        <a href="#" class="heart-btn"><i class="far fa-heart"></i></a>
+                                        <img src="img/cart_10.jpg" class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="card-body p-0 d-flex text-center align-items-center">
+                                        <div class="item-name col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">黃金遊樂園</div>
+                                        <div class="item-price col py-3 font-weight-bolder text-main-color" style="font-size: 1.25rem;">NT $200</div>
+                                    </div>
+                                    <div class="card-footer p-0">
+                                        <a href="#" class="btn btn-second-color w-100 menu-btn py-3">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form-inline -->
+    <section class="bg-main-color py-4">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 mb-3 mb-md-0 text-center">
+                    <h4 class="text-white">訂閱追蹤一碗麵的故事</h4>
+                </div>
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control py-4 rounded-0" placeholder="&#xf0e0 Mail">
+                        <div class="input-group-append">
+                            <button class="btn btn-second-color px-4 rounded-0 text-main-color" style=" font-size: 1.25rem;" type="button"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-second-color py-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <img src="img/logo.png" width="200" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-5 text-md-right ml-3" style="font-size: 2rem;">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <ul>
+                        <li><i class="fas fa-mobile-alt"></i> (+886) 912345678</li>
+                        <li><i class="far fa-envelope"></i> XXX@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 112 台北市內湖區</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Modal 登入-->
+    <div class="modal fade" data-backdrop="static" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header badge-main-color">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="close closeModal" data-page="#menu" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="accountLogin">帳號</label>
+                            <input type="text" class="form-control" id="accountLogin" placeholder="&#xf007 Account">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogin">密碼</label>
+                            <input type="password" class="form-control" id="passwordLogin" placeholder="&#xf13e Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">記住密碼</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal"><small>還沒有帳號嗎？</small></a>
+                    <button type="button" class="btn btn-secondary closeModal" data-page="#menu" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-main-color">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 註冊 -->
+    <div class="modal fade" data-backdrop="static" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header badge-info">
+                    <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+                    <button type="button" class="close closeModal" data-page="#menu" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 order-md-1">
+                            <h3 class="text-secondary font-weight-bold text-center">連結社群帳號</h3>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item sns-link mb-2 p-0 text-center"><a href="#" class="d-block sns-link-btn"><i class="fab fa-facebook-f mr-2"></i> Facebook</a></li>
+                                <li class="list-group-item sns-link mb-2 p-0 text-center"><a href="#" class="d-block sns-link-btn"><i class="fab fa-google-plus-g mr-2"></i> Google</a></li>
+                                <li class="list-group-item sns-link mb-2 p-0 text-center"><a href="#" class="d-block sns-link-btn"><i class="fab fa-yahoo mr-2"></i> Yahoo</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="accountRegister">帳號</label>
+                                    <input type="text" class="form-control" id="accountLogin" placeholder="&#xf007 Account">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordRegister">密碼</label>
+                                    <input type="password" class="form-control" id="passwordLogin" placeholder="&#xf13e Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordConfirm">確認密碼</label>
+                                    <input type="password" class="form-control" id="passwordConfirm" placeholder="&#xf13e Conform Password">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal"><small>已經有帳號</small></a>
+                    <button type="button" class="btn btn-secondary closeModal" data-page="#menu" data-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-info">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>

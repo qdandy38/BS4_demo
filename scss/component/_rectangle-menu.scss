@@ -1,0 +1,61 @@
+.rectangle-section {
+    margin-top: -60px;
+}
+
+.rectangle-image-wrap {
+    height: 256px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rectangle-image-wrap.active,
+.rectangle-image-wrap:hover,
+.rectangle-image-wrap:focus {
+    color: theme-color(main-color);
+    text-decoration: none;
+}
+
+.rectangle-text {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.four-sides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rectangle-image-wrap.active .rectangle-over,
+.rectangle-image-wrap:hover .rectangle-over,
+.rectangle-image-wrap:focus .rectangle-over {
+    background-color: rgba(241, 239, 226, .8);
+    z-index: -1;
+}
+
+.rectangle-image {
+    position: absolute;
+    right: -10px;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    filter: blur(5px);
+    z-index: -2;
+    transition: filter .2s;
+}
+
+.rectangle-image-wrap.active .rectangle-image,
+.rectangle-image-wrap:hover .rectangle-image,
+.rectangle-image-wrap:focus .rectangle-image {
+    filter: blur(0);
+}

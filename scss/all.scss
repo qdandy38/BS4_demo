@@ -1,0 +1,20 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+// layout
+@import "component/layout";
+// 通用
+@import "component/general";
+// index
+@import "component/rectangle-menu";
+@import "component/intro";
+@import "component/form-inline";
+// menu
+@import "component/menu";
+//login
+@import "component/login";
+//cart
+@import "component/cart";
+//checkout
+@import "component/checkout";

@@ -1,0 +1,37 @@
+.cart-control {
+    width: 145px;
+}
+
+.cart-img {
+    width: 100%;
+}
+
+.divider {
+    border-top: 1px solid #EAF0ED;
+}
+
+.cart-row {
+    border-bottom: 2px solid theme-color(main-color);
+}
+
+.cart-main {
+    min-height: 47vh;
+}
+
+@media(min-width:992px) {
+    .divider {
+        border-top-color: transparent;
+    }
+}
+
+@media(min-width:992px) {
+    .cart-img {
+        width: 200px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .cart-text-rwd {
+        font-size: 1rem;
+    }
+}

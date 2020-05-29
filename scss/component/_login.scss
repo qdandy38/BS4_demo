@@ -1,0 +1,16 @@
+.sns-link {
+    border-top-width: 1px !important;
+}
+
+.sns-link-btn {
+    color: theme-color(secondary);
+    padding: .75rem .75rem;
+    font-size: 1.25rem;
+}
+
+.sns-link-btn:hover,
+.sns-link-btn:active {
+    background-color: theme-color(second-color);
+    text-decoration: none;
+    color: theme-color(secondary);
+}

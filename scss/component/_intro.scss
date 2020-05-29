@@ -1,0 +1,18 @@
+@media(min-width:768px) {
+    .writing-md-vertical {
+        writing-mode: vertical-rl;
+    }
+    .break-vertical-block {
+        margin-top: -24px;
+        margin-bottom: -24px;
+    }
+}
+
+.section-intro-image {
+    min-height: 250px;
+}
+
+.vertical-content {
+    line-height: 2;
+    max-height: 420px;
+}

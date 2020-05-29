@@ -1,0 +1,71 @@
+// 產品列表
+.item-name {
+    border-right: 1px solid #EAF0ED;
+}
+
+.menu-btn {
+    font-weight: bolder;
+    color: theme-color(main-color);
+    font-size: 1.25rem;
+}
+
+.menu-btn:hover {
+    background-color: theme-color(main-color);
+    color: #fff;
+}
+
+.item-img {
+    max-height: 222px;
+}
+
+.item-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: theme-color(main-color);
+}
+
+a.heart-btn .far {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    z-index: 5;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a.heart-btn .fas {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    z-index: 5;
+    color: red;
+    font-size: 1.5rem;
+}
+
+a.heart-btn:hover {
+    color: white;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+}
+
+.box-shadow:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24);
+}
+
+//產品nav
+.menu-nav {
+    color: theme-color(main-color);
+    font-weight: $font-weight-bold;
+}
+
+.menu-nav:hover,
+.menu-nav:focus,
+.menu-nav.active {
+    background-color: theme-color(second-color);
+    color: theme-color(main-color);
+    border-color: transparent;
+}

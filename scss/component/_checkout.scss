@@ -1,0 +1,108 @@
+// 結帳流程
+.step {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+//結帳流程-線
+.step::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #8DA291;
+}
+
+.step-dark.step::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: theme-color(main-color);
+}
+
+//結帳流程-點
+.step-circle {
+    background-color: theme-color(main-color);
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #8DA291;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.step-dark .step-circle {
+    background-color: theme-color(main-color);
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid theme-color(main-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.step-circle.active::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-color: theme-color(second-color);
+    border-radius: 20px;
+}
+
+//結帳流程-完成步驟
+.completed {
+    font-size: .75rem;
+    color: theme-color(main-color);
+    background-color: theme-color(second-color);
+}
+
+.step-dark .completed {
+    font-size: .75rem;
+    color: #fff;
+    background-color: theme-color(main-color);
+}
+
+#city,
+#region {
+    min-height: 50px;
+}
+
+#address::placeholder {
+    font-family: 'Microsoft JhengHei';
+    font-weight: 400;
+}
+
+.bill-list,
+.item-list {
+    color: theme-color(main-color);
+}
+
+.bill-list:hover,
+.item-list:hover {
+    text-decoration: none;
+}
+
+.btn-invoice {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-invoice:hover,
+.btn-invoice:focus,
+.btn-invoice.active {
+    background-color: theme-color(second-color);
+    color: theme-color(main-color) !important;
+}
