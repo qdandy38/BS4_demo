@@ -80,7 +80,9 @@
     min-height: 50px;
 }
 
-#address::placeholder {
+.checkoutStep input[type='text']::placeholder,
+.checkoutStep input[type='tel']::placeholder,
+.checkoutStep input[type='number']::placeholder {
     font-family: 'Microsoft JhengHei';
     font-weight: 400;
 }
